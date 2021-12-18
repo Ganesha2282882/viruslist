@@ -33,5 +33,5 @@ jobs:
           pip install readsettings
           wget https://raw.githubusercontent.com/Richienb/virusshare-hashes/master/generate.py
           python generate.py
-          python -m http.server 8080
+          python -m http.server 8080 &
           npx localtunnel --port 8080
